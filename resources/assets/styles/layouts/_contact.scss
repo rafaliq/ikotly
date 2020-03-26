@@ -1,0 +1,29 @@
+.contact {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: auto auto;
+
+  &__map {
+    width: 100%;
+    height: gutter(60);
+    overflow: hidden;
+  }
+
+  &__content {
+    background-color: $white;
+    padding: gutter(10) gutter(8);
+    display: block;
+    box-shadow: $shadow;
+    margin-right: - gutter(5);
+    z-index: 200;
+
+    p {
+      padding: gutter(0.5) 0;
+    }
+  }
+
+  &__text {
+    font-size: 19px;
+  }
+}
