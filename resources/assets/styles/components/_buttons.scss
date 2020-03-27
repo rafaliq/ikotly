@@ -4,7 +4,7 @@
   font-family: $font-main;
   padding: gutter(1) gutter(3);
   display: inline-block;
-  border: 1px solid $white;
+  background-color: $primary;
   text-transform: uppercase;
   cursor: pointer;
 
@@ -12,20 +12,6 @@
     color: $black;
     background-color: $white;
     text-decoration: none;
-  }
-
-  &--small {
-    padding: gutter(0.6) gutter(1.5);
-  }
-
-  &--dark {
-    color: $black;
-    border-color: $black;
-
-    &:hover {
-      color: $white;
-      background-color: $black;
-    }
   }
 
   &--center {

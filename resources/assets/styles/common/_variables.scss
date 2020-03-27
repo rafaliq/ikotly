@@ -3,7 +3,7 @@
 
 // tab colors
 $theme-colors: (
-  primary: #b0cd6e,
+  primary: #328d0c,
   secondary: #f13a2c,
   primary-light: #61ce4e,
   primary-dark: #51b340,
@@ -18,7 +18,7 @@ $theme-colors: (
 );
 
 // colors
-$primary: #b0cd6e;
+$primary: #328d0c;
 $secondary: #f13a2c;
 $primary-light: #61ce4e;
 $primary-dark: #51b340;
@@ -40,8 +40,9 @@ $bold: 700;
 $bold-black: 900;
 
 // font family
-$font-main: "Montserrat", sans-serif;
-$font-special: "Open Sans", cursive;
+$font-main: "Roboto", sans-serif;
+$font-title: "Oswald", sans-serif;
+$font-special: "Oswald", sans-serif;
 
 // media
 $breakpoints: (
@@ -56,7 +57,7 @@ $breakpoints: (
 $gutter: 10px;
 
 // width
-$container: 1500;
+$container: 1650;
 
 // shadow
 $shadow: 3px 7px 31px rgba($black, 0.06);

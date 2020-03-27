@@ -4,9 +4,9 @@
 }
 
 .headline {
-  @include cssLock("font-size", 360, $container, (32, 60));
+  @include cssLock("font-size", 360, $container, (60, 90));
 
-  font-family: $font-special;
+  font-family: $font-title;
   font-weight: $bold;
   color: $white;
   text-transform: uppercase;
@@ -15,7 +15,7 @@
 .title {
   @include cssLock("font-size", 360, $container, (32, 36));
 
-  font-family: $font-main;
+  font-family: $font-title;
   font-weight: $bold;
   text-transform: uppercase;
   color: $black;

@@ -23,14 +23,6 @@
             ]) !!}
         @endif
       </nav>
-      <div class="header__button">
-        <a href="#" style="text-decoration: none;">
-          <i class="fab fa-facebook-square header__icon"></i>
-        </a>
-        <a href="tel:{{ str_replace(' ','', get_option_field('phone')) }}" class="button button--small">
-          {{ get_option_field('phone')  }}
-        </a>
-      </div>
     </div>
   </div>
 </header>
