@@ -19,3 +19,21 @@
     <source src="@asset('images/ikotly.mp4')" type="video/mp4">
   </video>
 </section>
+
+<section class="section">
+  <div class="container offer">
+    <div class="section-info">
+      <h2>
+        <span class="pretitle">
+          Nasze usługi
+        </span>
+        <span class="title">
+          Oferta
+        </span>
+      </h2>
+      <p class="text section-info__desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dolor felis, elementum at cursus nec, convallis id ex.
+      </p>
+    </div>
+  </div>
+</section>

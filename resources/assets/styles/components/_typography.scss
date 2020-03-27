@@ -13,91 +13,35 @@
 }
 
 .title {
-  @include cssLock("font-size", 360, $container, (32, 36));
-
+  font-size: 50px;
   font-family: $font-title;
   font-weight: $bold;
   text-transform: uppercase;
   color: $black;
   display: block;
-  margin: gutter(3) 0;
   position: relative;
 
   @extend %text;
-
-  &--section {
-    @include cssLock("font-size", 360, $container, (32, 60));
-
-    text-transform: none;
-    text-align: center;
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
-    display: inline-block;
-    position: relative;
-
-    &::before {
-      content: url(images/leaf.png);
-      position: absolute;
-      display: block;
-      left: - gutter(9);
-      top: -20%;
-    }
-  }
 }
 
 .pretitle {
-  @include cssLock("font-size", 360, 1700, (32, 52));
-
-  font-family: $font-special;
-  color: $primary-light;
-  font-weight: $regular;
+  font-size: 20px;
+  font-family: $font-title;
+  color: $secondary-light;
+  font-weight: $medium;
+  text-transform: uppercase;
 
   @extend %text;
-
-  &--small {
-    @include cssLock("font-size", 360, 1700, (22, 32));
-
-    color: $white;
-  }
 }
 
 .text {
-  @include cssLock("font-size", 360, 1700, (16, 16));
-
+  font-size: 16px;
   font-family: $font-main;
-  font-weight: $light;
+  font-weight: $regular;
   margin: gutter(3.5) 0;
   letter-spacing: 0;
 
   @extend %text;
-
-  &--small {
-    font-size: 12px;
-    margin: 0;
-    padding: 0;
-    line-height: gutter(1.8);
-  }
-
-  &--black {
-    color: $black;
-  }
-
-  &--white {
-    color: $white;
-  }
-
-  &--bold {
-    font-weight: $bold;
-  }
-
-  &--primary {
-    color: $primary;
-  }
-
-  &--left {
-    text-align: left;
-  }
 
   &--center {
     text-align: center;

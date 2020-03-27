@@ -1,0 +1,11 @@
+.section-info {
+  text-align: center;
+  margin: auto;
+  color: $secondary;
+
+  &__desc {
+    max-width: gutter(42);
+    margin: gutter(2) auto;
+    display: block;
+  }
+}

@@ -9,8 +9,8 @@
   cursor: pointer;
 
   &:hover {
-    color: $black;
-    background-color: $white;
+    color: $white;
+    background-color: lighten($primary, 5);
     text-decoration: none;
   }
 
