@@ -30,7 +30,7 @@ $gray-light: #f6f6f6;
 $gray_dark: #716d6c;
 $gray: #eee;
 $white: #fff;
-$black: #000;
+$black: rgb(37, 37, 37);
 
 // font weight
 $light: 300;
@@ -58,7 +58,7 @@ $breakpoints: (
 $gutter: 10px;
 
 // width
-$container: 1650;
+$container: 1700;
 
 // shadow
 $shadow: 3px 7px 31px rgba($black, 0.06);

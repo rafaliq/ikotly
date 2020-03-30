@@ -1,0 +1,30 @@
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 0;
+  color: $black;
+
+  &__item {
+    padding: gutter(12) gutter(5.5);
+
+    &:nth-child(even) {
+      background-color: $bg;
+    }
+
+    &:first-of-type {
+      padding-left: 0;
+    }
+
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
+
+  &__text {
+    margin: gutter(4) 0;
+    display: block;
+    overflow: hidden;
+    min-height: gutter(16);
+    text-overflow: ellipsis;
+  }
+}
