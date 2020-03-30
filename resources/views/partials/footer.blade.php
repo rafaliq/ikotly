@@ -1,4 +1,4 @@
-{{-- @if(get_field('show_map'))
+@if(get_field('show_map'))
   <section class="section">
     <div class="container contact">
       <div class="contact__content">
@@ -39,4 +39,4 @@
       </div>
     </div>
   </div>
-</footer> --}}
+</footer>

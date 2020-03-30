@@ -2,11 +2,11 @@
   <div class="main-carousel">
       @foreach ($data['baner'] as $ban)
         <div class="slider carousel-cell">
-          <img class="slider_bg" src="{{ $ban['image']['url'] }}" alt="{{ $data['image']['alt'] }}">
+          <img class="slider__bg" src="{{ $ban['image']['url'] }}" alt="{{ $data['image']['alt'] }}">
           <div class="container">
             <div class="slider__content">
               <h1>
-                <span class="headline slider__title">
+                <span class="title slider__title">
                   {{ $ban['title'] }}
                 </span>
               </h1>
