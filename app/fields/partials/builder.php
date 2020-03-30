@@ -22,6 +22,8 @@ $builder
             ->addLayout(get_field_partial('components.hr'))
             //->addLayout(get_field_partial('components.stays'))
             ->addLayout(get_field_partial('components.contact'))
+            ->addLayout(get_field_partial('components.offer'))
+            ->addLayout(get_field_partial('components.store'))
             ->addLayout(get_field_partial('components.boxes'))
             ->addLayout(get_field_partial('components.menu'))
             ->addLayout('content', ['label' => 'Treść']);

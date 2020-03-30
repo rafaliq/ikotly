@@ -1,7 +1,10 @@
 .section-info {
-  text-align: center;
   margin: auto;
   color: $secondary;
+
+  &--center {
+    text-align: center;
+  }
 
   &__desc {
     max-width: gutter(45);

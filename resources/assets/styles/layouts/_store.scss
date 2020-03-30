@@ -1,0 +1,25 @@
+.store {
+  background: linear-gradient($bg), linear-gradient($gray);
+  background-size: 35.7% 100%, 133.33333% 100%;
+  background-repeat: no-repeat;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 33.5% 76.5%;
+  }
+
+  &__info {
+    padding: gutter(18) 0;
+    max-width: gutter(45);
+  }
+
+  &__slider {
+    padding: gutter(18) 0;
+    text-align: center;
+    margin: auto;
+  }
+
+  &__text {
+    margin: gutter(4) 0;
+  }
+}
