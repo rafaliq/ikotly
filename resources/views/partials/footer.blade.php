@@ -1,23 +1,27 @@
 @if(get_field('show_map'))
-  <section class="section">
-    <div class="container contact">
-      <div class="contact__content">
-        <h2 class="title">
-          Kontakt
-        </h2>
-        <div class="text contact__text">
-          <p>
-            {{  get_option_field("name")  }}
-          </p>
-          <p>
-            {!! get_option_field("address") !!}
-          </p>
-          <p>
-            Telefon: 
-            <a href="tel:{{ str_replace(' ','', get_option_field('phone')) }}" class="link">
-              {{ get_option_field("phone") }}
-            </a>
-          </p>
+  <section>
+    <div class="contact">
+      <div class="container contact__box">
+        <div class="contact__content">
+          <h2 class="title">
+            Kontakt
+          </h2>
+          <div class="text contact__text">
+            <p>
+              {{  get_option_field("name")  }}
+              <br>
+              {!! get_option_field("address") !!}
+            </p>
+            <p>
+              <a href="tel:{{ str_replace(' ','', get_option_field('phone')) }}" class="link">
+                {{ get_option_field("phone") }}
+              </a>
+              <br>
+              <a href="mailto:{{ str_replace(' ','', get_option_field('email')) }}" class="link">
+                {{ get_option_field("email") }}
+              </a>
+            </p>
+          </div>
         </div>
       </div>
       <div class="contact__map">
