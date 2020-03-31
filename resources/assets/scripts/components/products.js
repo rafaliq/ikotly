@@ -1,9 +1,9 @@
 const Flickity = require('flickity');
 
 // deklarowanie obiektu
-const slider = {
+const products = {
   init() {
-    this.slider = new Flickity('.main-carousel', {
+    this.products = new Flickity('.products-carousel', {
       prevNextButtons: true,
       pageDots: true,
       wrapAround: true,
@@ -14,9 +14,9 @@ const slider = {
 
   resize() {
     window.onload = () => {
-      this.slider.resize();
+      this.products.resize();
     };
   },
 }
 
-export default slider;
+export default products;

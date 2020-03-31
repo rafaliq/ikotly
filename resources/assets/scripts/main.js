@@ -16,6 +16,7 @@ import header from './components/header';
 import submenu from './components/submenu';
 import menu from './components/menu';
 import slider from './components/slider';
+import products from './components/products';
 import preloader from './components/preloader';
 
 
@@ -40,6 +41,9 @@ jQuery(document).ready(() => {
   //new WOW.WOW.init();
   if($('.main-carousel').length) {
     slider.init();
+  }
+  if($('.products-carousel').length) {
+    products.init();
   }
 });
 

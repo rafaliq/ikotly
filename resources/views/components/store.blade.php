@@ -19,8 +19,8 @@
           Sklep
         </a>
       </div>
-      <div class="store__slider">
-        <div class="store__product">
+      <div class="products-carousel store__slider">
+        <div class="store__product carousel-cell">
           <div class="section-info section-info--center">
             <h2>
               <span class="pretitle">
