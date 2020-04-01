@@ -46,6 +46,14 @@
 
   @extend %text;
 
+  &--2 {
+    font-size: 21px;
+  }
+
+  &--3 {
+    font-size: 25px;
+  }
+
   &--center {
     text-align: center;
   }

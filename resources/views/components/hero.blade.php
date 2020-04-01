@@ -4,11 +4,11 @@
       <span class="hero__header headline text--white">
         {{ $data['header'] }}
       </span>
-      <span class="hero__subheader">
+      <span class="text text--3 hero__subheader">
         {{ $data['subheader'] }}
       </span>
     </h1>
-    <p class="text hero__text">
+    <p class="text text--2 hero__text">
       Posiadamy bogate doświadczenie w branży instalacji C.O. i biomasy. Od 2009 roku funkcjonujemy na rynku ogólnopolskim i przez ten czas zdobyliśmy cenne doświadczenie podczas realizacji inwestycji.
     </p>
     <a href="#" class="button">

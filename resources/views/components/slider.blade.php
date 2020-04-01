@@ -10,7 +10,7 @@
                   {{ $ban['title'] }}
                 </span>
               </h1>
-              <div class="text slider__text">
+              <div class="text text--2 slider__text">
                 {!! $ban['desc'] !!}
               </div>
               @if($ban['link'])
@@ -30,7 +30,7 @@
                   {{ $ban['title'] }}
                 </span>
               </h1>
-              <div class="text slider__text">
+              <div class="text text--2 slider__text">
                 {!! $ban['desc'] !!}
               </div>
               @if($ban['link'])
