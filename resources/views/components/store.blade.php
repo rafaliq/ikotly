@@ -43,6 +43,30 @@
             </div>
           </div>
         </div>
+        <div class="store__product carousel-cell">
+          <div class="section-info section-info--center">
+            <h2>
+              <span class="pretitle">
+                10 KW / 15  KW / 20 KW
+              </span>
+              <span class="title">
+                MINI BIO NE
+              </span>
+            </h2>
+          </div>
+          <a href="#" class="button button--info store__button">
+            8300 zł
+          </a>
+          <div class="store__images">
+            <div class="store__image">
+              <img src="@asset('images/store1.png')">
+            </div>
+            <div class="store__image">
+              <img src="@asset('images/store2.png')">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

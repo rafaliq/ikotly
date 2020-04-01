@@ -5,7 +5,7 @@
 
   &__wrapper {
     display: grid;
-    grid-template-columns: 33.5% 76.5%;
+    grid-template-columns: 33.5% auto;
     align-items: center;
   }
 
@@ -16,17 +16,16 @@
 
   &__text {
     margin: gutter(4) 0;
+    max-width: gutter(45);
   }
 
   &__slider {
     padding: gutter(5) 0;
-    max-width: gutter(80);
     text-align: center;
-    margin: auto;
   }
 
   &__product {
-    max-width: gutter(80);
+    width: 100%;
   }
 
   &__button {
