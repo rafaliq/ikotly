@@ -23,7 +23,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dolor felis, elementum at cursus nec, convallis id ex. Etiam vel tempus ex.
           </p>
         </div>
-        <div class="offer__box">
+        <div class="offer__box offer__box--left">
           <h3 class="title title--small offer__title">
             Fotowoltaika
           </h3>
@@ -44,7 +44,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dolor felis, elementum at cursus nec, convallis id ex. Etiam vel tempus ex.
           </p>
         </div>
-        <div class="offer__box">
+        <div class="offer__box  offer__box--right">
           <h3 class="title title--small offer__title">
             Rekuperacja
           </h3>
