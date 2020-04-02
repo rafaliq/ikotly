@@ -25,6 +25,17 @@
 
   &--small {
     font-size: 25px;
+
+    &::after {
+      content: "";
+      background-color: $primary;
+      width: gutter(5);
+      height: gutter(0.5);
+      display: block;
+      position: absolute;
+      left: 0;
+      top: gutter(4.5);
+    }
   }
 }
 

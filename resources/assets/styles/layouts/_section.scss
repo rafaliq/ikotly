@@ -6,6 +6,11 @@
     padding: gutter(6) 0;
   }
 
+  &__columns {
+    display: grid;
+    grid-template-columns: 1fr 1.99fr;
+  }
+
   &__title {
     margin-bottom: gutter(4);
   }
@@ -22,6 +27,12 @@
 
   &--color {
     background-color: $gray-light;
+  }
+
+  &--gradient {
+    background: linear-gradient($bg), linear-gradient($bg-dark);
+    background-size: 35.7% 100%, 133.33333% 100%;
+    background-repeat: no-repeat;
   }
 
   &--map {

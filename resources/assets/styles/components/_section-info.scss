@@ -1,14 +1,19 @@
 .section-info {
-  margin: auto;
+  margin: 0;
   color: $secondary;
 
   &--center {
     text-align: center;
+    margin: auto;
   }
 
   &__desc {
     max-width: gutter(45);
     margin: gutter(2) auto;
     display: block;
+
+    &--column {
+      margin: gutter(4) 0;
+    }
   }
 }

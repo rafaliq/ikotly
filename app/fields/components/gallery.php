@@ -12,7 +12,8 @@ $config = (object) [
 $gallery = new FieldsBuilder('gallery', ['label' => 'galeria']);
 
 $gallery
-    ->addFields(get_field_partial('components.title'))
-    ->addGallery('gallery');
+    ->addRepeater('gallery', ['label' => 'Galeria'])
+        ->addTexT('title')
+        ->addGallery('images');
 
 return $gallery;

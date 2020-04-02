@@ -1,12 +1,18 @@
 .gallery {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: gutter(2);
   margin: gutter(8) auto;
   padding: 0;
 
   @include media("<md") {
     grid-template-columns: 1fr 1fr;
+  }
+
+  &--columns {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto gutter(8);
+    padding-left: gutter(4);
   }
 
   &__image {

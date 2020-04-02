@@ -36,15 +36,5 @@
   &__title {
     margin-bottom: gutter(5);
     position: relative;
-
-    &::after {
-      content: "";
-      background-color: $primary;
-      width: gutter(5);
-      height: gutter(0.5);
-      display: block;
-      position: absolute;
-      bottom: -(gutter(1.8));
-    }
   }
 }
