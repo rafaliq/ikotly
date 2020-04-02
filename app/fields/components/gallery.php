@@ -13,7 +13,8 @@ $gallery = new FieldsBuilder('gallery', ['label' => 'galeria']);
 
 $gallery
     ->addRepeater('gallery', ['label' => 'Galeria'])
-        ->addTexT('title')
+        ->addText('title', ['label' => 'Tytuł', 'wrapper' => ['width' => 20]])
+        ->addTextarea('desc', ['rows' => 4, 'new_lines' => 'br', 'label' => 'Opis', 'wrapper' => ['width' => 30]])
         ->addGallery('images');
 
 return $gallery;
