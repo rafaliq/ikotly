@@ -1,0 +1,15 @@
+.content-single {
+  &__cover {
+    width: 80%;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  &__title {
+    margin-bottom: gutter(5);
+  }
+}
