@@ -1,6 +1,12 @@
 .content-single {
+  &__content {
+    padding-left: gutter(5);
+  }
+
   &__cover {
     width: 80%;
+    position: sticky;
+    top: gutter(14);
   }
 
   &__img {

@@ -15,6 +15,7 @@
     </div>
   </div>
 </section>
+<section class="section section--color">
   <div class="container content-page">
     @if (!have_posts())
       <div class="alert alert-warning">
@@ -30,4 +31,5 @@
 
     {!! get_the_posts_navigation() !!}
   </div>
+</section>
 @endsection

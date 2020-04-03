@@ -27,6 +27,7 @@ $builder
             ->addLayout(get_field_partial('components.store'))
             ->addLayout(get_field_partial('components.boxes'))
             ->addLayout(get_field_partial('components.menu'))
-            ->addLayout('content', ['label' => 'Treść']);
+            ->addLayout('content', ['label' => 'Treść'])
+            ->addLayout('content-columns', ['label' => 'Treść Kolumny']);
 
 return $builder;

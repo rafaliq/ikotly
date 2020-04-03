@@ -1,4 +1,4 @@
-<section>
+<section class="section section--color">
     <div class="container content-page">
         <div class="row">
             <div class="col">

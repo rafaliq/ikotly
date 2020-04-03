@@ -1,4 +1,3 @@
-
 <div class="page-title">
 	<div class="container">
 		<h1 class="title title--center">
