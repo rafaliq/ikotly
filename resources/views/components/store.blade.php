@@ -5,67 +5,49 @@
         <div class="section-info">
           <h2>
             <span class="pretitle">
-              Nowoczesne
+              {{ $data['prefix'] }}
             </span>
             <span class="title">
-              Systemy grzewcze
+              {{ $data['title'] }}
             </span>
           </h2>
         </div>
         <p class="text store__text">
-          W swojej ofercie mamy jedynie najwyższej klasy produkty (piece i kotły na pellet), które oferujemy naszym klientom, gwarantując tym samym ich jakość i bezproblemowe użytkowanie. Zapoznajcie się ze szczegółami konkretnego pieca bądź kotła na pellet, które dla Was przygotowaliśmy!
+          {{ $data['desc'] }}
         </p>
-        <a href="#" class="button">
-          Sklep
+        <a href="{{ $data['link']['url'] }}" class="button">
+          {{ $data['link']['title'] }}
         </a>
       </div>
       <div class="products-carousel store__slider">
-        <div class="store__product carousel-cell">
-          <div class="section-info section-info--center">
-            <h2>
-              <span class="pretitle">
-                10 KW / 15  KW / 20 KW
-              </span>
-              <span class="title">
-                MINI BIO NE
-              </span>
-            </h2>
-          </div>
-          <a href="#" class="button button--info store__button">
-            8300 zł
-          </a>
-          <div class="store__images">
-            <div class="store__image">
-              <img src="@asset('images/store1.png')">
+        @foreach($data['products'] as $product)
+          <div class="store__product carousel-cell">
+            <div class="section-info section-info--center">
+              <h2>
+                @if($product['prefix'])
+                  <span class="pretitle">
+                    {{ $product['prefix'] }}
+                  </span>
+                @endif
+                <span class="title">
+                  {{ $product['title'] }}
+                </span>
+              </h2>
             </div>
-            <div class="store__image">
-              <img src="@asset('images/store2.png')">
-            </div>
-          </div>
-        </div>
-        <div class="store__product carousel-cell">
-          <div class="section-info section-info--center">
-            <h2>
-              <span class="pretitle">
-                10 KW / 15  KW / 20 KW
-              </span>
-              <span class="title">
-                MINI BIO NE
-              </span>
-            </h2>
-          </div>
-          <a href="#" class="button button--info store__button">
-            8300 zł
-          </a>
-          <div class="store__images">
-            <div class="store__image">
-              <img src="@asset('images/store1.png')">
-            </div>
-            <div class="store__image">
-              <img src="@asset('images/store2.png')">
+            @if($product['link'])
+              <a href="{{ $product['link']['url'] }}" class="button button--info store__button">
+                {{ $product['link']['title'] }}
+              </a>
+            @endif
+            <div class="store__images">
+              @foreach($product['images'] as $img)
+                <div class="store__image">
+                  <img src="{{ $img['url'] }}" alt="{{ $img['alt'] }}">
+                </div>
+              @endforeach
             </div>
           </div>
-        </div>
+        @endforeach
       </div>
     </div>
   </div>
