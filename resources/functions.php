@@ -113,3 +113,17 @@ function image($id, $size, $class)
 {
     return wp_get_attachment_image($id, $size, false, ['class' => $class]);
 }
+
+// get aktualnosci
+
+function blog() {
+    $posts = get_posts(array(
+        'numberposts'      => 6,
+        'orderby'   => 'date',
+        'sort_order' => 'asc',
+        'post_type'  => 'post',
+        'category'   => 3,
+    ));
+
+    return $posts;
+}

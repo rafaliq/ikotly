@@ -36,7 +36,7 @@
     color: $white;
     margin: auto;
     text-align: center;
-    max-width: gutter(80);
+    max-width: gutter(100);
     z-index: 900;
 
     @include media("<=md") {

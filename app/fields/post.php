@@ -10,6 +10,6 @@ $post
     ->setLocation('post_type', '==', 'post');
 
 $post
-    ->addFields(get_field_partial('partials.builder'));
-
+    ->addTab('blog', ['label'=>'Ustawienia wpisów', 'placement' => 'left'])
+        ->addImage('blogbg', ['label' => 'Tło']);
 return $post;
