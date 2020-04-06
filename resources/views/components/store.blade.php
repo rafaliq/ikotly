@@ -13,7 +13,7 @@
           </h2>
         </div>
         <p class="text store__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dolor felis, elementum at cursus nec, convallis id ex. Etiam vel tempus ex, non porttitor turpis. Duis vehicula aliquam odio, aliquam vulputate purus eleifend
+          W swojej ofercie mamy jedynie najwyższej klasy produkty (piece i kotły na pellet), które oferujemy naszym klientom, gwarantując tym samym ich jakość i bezproblemowe użytkowanie. Zapoznajcie się ze szczegółami konkretnego pieca bądź kotła na pellet, które dla Was przygotowaliśmy!
         </p>
         <a href="#" class="button">
           Sklep

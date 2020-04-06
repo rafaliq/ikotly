@@ -12,12 +12,8 @@ $config = (object) [
 $title = new FieldsBuilder('title', ['label' => 'Tytuł']);
 
 $title
-    ->addRadio('header', ['title'=>'Pokaż tytuł sekcji?', 'label' => 'Tytuł sekcji'])
-        ->setInstructions('Pokaż tytuł sekcji.')
-        ->addChoices('nie', 'tak')
-
-    ->addText('title', ['label' => 'Tytuł'])
-        ->setInstructions('Wprowadź tytuł')
-        ->conditional('header', '==', 'tak');
+    ->addText('prefix', ['label' => 'Prefix', 'wrapper' => ['width' => 30]])
+    ->addText('title', ['label' => 'Tytuł', 'wrapper' => ['width' => 30]])
+    ->addTextarea('desc', ['rows' => 4, 'new_lines' => 'br', 'label' => 'Opis']);
 
 return $title;

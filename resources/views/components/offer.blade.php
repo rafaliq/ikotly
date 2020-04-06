@@ -1,57 +1,43 @@
 <section class="section">
   <div class="container">
-    <div class="section-info section-info--center">
-      <h2>
-        <span class="pretitle">
-          Nasze usługi
-        </span>
-        <span class="title">
-          Oferta
-        </span>
-      </h2>
-      <p class="text section-info__desc">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dolor felis, elementum at cursus nec, convallis id ex.
-      </p>
-    </div>
+    @include('blocks.section-info', ['pretitle' => $data['prefix'], 'title' => $data['title'], 'desc' => $data['desc']])
     <div class="offer">
       <div class="offer__column">
-        <div class="offer__box">
-          <h3 class="title title--small offer__title">
-            Kotły na pelet
-          </h3>
-          <p class="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dolor felis, elementum at cursus nec, convallis id ex. Etiam vel tempus ex.
-          </p>
-        </div>
-        <div class="offer__box offer__box--left">
-          <h3 class="title title--small offer__title">
-            Fotowoltaika
-          </h3>
-          <p class="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dolor felis, elementum at cursus nec, convallis id ex. Etiam vel tempus ex.
-          </p>
-        </div>
+        @foreach($data['boxes'] as $item)
+          @if($loop->iteration == '1' || $loop->iteration == '2')
+            <div class="offer__box @if($loop->iteration == '2') offer__box--left @endif">
+              <h3 class="title title--small offer__title">
+                {{ $item['title'] }}
+              </h3>
+              <p class="text">
+                {{ $item['desc'] }}
+              </p>
+              <a href="{{ $data['link']['url'] }}" class="link offer__link">
+                {{ $data['link']['title'] }}
+              </a>
+            </div>
+          @endif
+        @endforeach
       </div>
       <div class="offer__image">
-        <img src="@asset('images/boiler.png')" alt="kocioł">
+        <img src="{{ $data['image']['url'] }}" alt="{{ $data['image']['alt'] }}">
       </div>
       <div class="offer__column">
-        <div class="offer__box">
-          <h3 class="title title--small offer__title">
-            Pompy ciepła
-          </h3>
-          <p class="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dolor felis, elementum at cursus nec, convallis id ex. Etiam vel tempus ex.
-          </p>
-        </div>
-        <div class="offer__box  offer__box--right">
-          <h3 class="title title--small offer__title">
-            Rekuperacja
-          </h3>
-          <p class="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dolor felis, elementum at cursus nec, convallis id ex. Etiam vel tempus ex.
-          </p>
-        </div>
+        @foreach($data['boxes'] as $item)
+          @if($loop->iteration == '3' || $loop->iteration == '4')
+            <div class="offer__box @if($loop->iteration == '4') offer__box--right @endif">
+              <h3 class="title title--small offer__title">
+                {{ $item['title'] }}
+              </h3>
+              <p class="text">
+                {{ $item['desc'] }}
+              </p>
+              <a href="{{ $data['link']['url'] }}" class="link offer__link">
+                {{ $data['link']['title'] }}
+              </a>
+            </div>
+          @endif
+        @endforeach
       </div>
     </div>
   </div>

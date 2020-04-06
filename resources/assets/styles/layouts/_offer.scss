@@ -18,7 +18,7 @@
   }
 
   &__box {
-    max-width: gutter(38);
+    max-width: gutter(40);
     margin: auto;
     padding: gutter(2);
 
@@ -36,5 +36,18 @@
   &__title {
     margin-bottom: gutter(5);
     position: relative;
+  }
+
+  &__link {
+    display: block;
+    margin-top: gutter(0.5);
+    font-weight: $light;
+    text-decoration: underline;
+    color: $black;
+
+    &:hover {
+      margin-left: gutter(0.5);
+      color: $primary;
+    }
   }
 }
