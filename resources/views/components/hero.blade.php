@@ -1,5 +1,5 @@
 <section class="hero">
-  <div class="hero__content">
+  <div class="container hero__content">
     <h1>
       <span class="hero__header headline text--white">
         {{ $data['header'] }}

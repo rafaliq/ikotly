@@ -1,8 +1,10 @@
 .button,
 .wp-block-file a,
 .wp-block-button__link {
+  @include cssLock("font-size", 360, $container, (14, 18));
+
   color: $white;
-  font-size: 1.2rem;
+  //font-size: 1.2rem;
   font-family: $font-main;
   padding: gutter(1) gutter(3);
   display: inline-block;
@@ -10,6 +12,10 @@
   text-transform: uppercase;
   border-radius: 0;
   cursor: pointer;
+
+  @include media("<md") {
+    padding: gutter(0.9) gutter(2.5);
+  }
 
   &:hover {
     color: $white;

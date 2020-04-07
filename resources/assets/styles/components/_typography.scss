@@ -4,7 +4,7 @@
 }
 
 .headline {
-  @include cssLock("font-size", 360, $container, (60, 90));
+  @include cssLock("font-size", 360, $container, (50, 90));
 
   font-family: $font-title;
   font-weight: $bold;
@@ -13,7 +13,8 @@
 }
 
 .title {
-  font-size: 45px;
+  @include cssLock("font-size", 360, $container, (25, 45));
+
   font-family: $font-title;
   font-weight: $bold;
   text-transform: uppercase;
@@ -24,7 +25,7 @@
   @extend %text;
 
   &--small {
-    font-size: 25px;
+    @include cssLock("font-size", 360, $container, (20, 25));
 
     &::after {
       content: "";
@@ -40,7 +41,8 @@
 }
 
 .pretitle {
-  font-size: 20px;
+  @include cssLock("font-size", 360, $container, (17, 20));
+
   font-family: $font-title;
   color: $secondary-light;
   font-weight: $medium;
@@ -50,7 +52,8 @@
 }
 
 .text {
-  font-size: 17px;
+  @include cssLock("font-size", 360, $container, (15, 17));
+
   font-family: $font-main;
   font-weight: $regular;
   letter-spacing: 0;
@@ -58,11 +61,11 @@
   @extend %text;
 
   &--2 {
-    font-size: 21px;
+    @include cssLock("font-size", 360, $container, (16, 21));
   }
 
   &--3 {
-    font-size: 25px;
+    @include cssLock("font-size", 360, $container, (19, 25));
   }
 
   &--center {

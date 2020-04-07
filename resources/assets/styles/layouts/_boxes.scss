@@ -4,6 +4,10 @@
   grid-gap: 0;
   color: $black;
 
+  @include media("<=lg") {
+    grid-template-columns: 1fr;
+  }
+
   &__item {
     padding: gutter(12) gutter(5.5);
 

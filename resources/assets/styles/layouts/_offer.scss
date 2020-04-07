@@ -4,11 +4,28 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
-  align-items: end;
+  align-items: baseline;
+
+  @include media("<=lg") {
+    grid-template-columns: 1fr;
+  }
+
+  &__column {
+    padding-top: gutter(15);
+
+    @include media("<=lg") {
+      padding: 0;
+    }
+  }
 
   &__image {
-    width: gutter(56);
+    @include cssLock("max-width", 360, $container, (300, 560));
+
     margin: auto;
+
+    @include media("<=lg") {
+      display: none;
+    }
 
     img {
       width: 100%;
@@ -20,16 +37,20 @@
   &__box {
     max-width: gutter(40);
     margin: auto;
-    padding: gutter(2);
+    padding: gutter(2) 0;
 
-    &--right {
-      margin-left: - gutter(3);
-      margin-top: gutter(4);
-    }
+    @include media(">=lg") {
+      padding: gutter(2);
 
-    &--left {
-      margin-right: - gutter(4);
-      margin-top: gutter(4);
+      &--right {
+        margin-left: - gutter(3);
+        margin-top: gutter(4);
+      }
+
+      &--left {
+        margin-right: - gutter(4);
+        margin-top: gutter(4);
+      }
     }
   }
 
