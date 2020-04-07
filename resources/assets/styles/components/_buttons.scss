@@ -1,4 +1,6 @@
-.button {
+.button,
+.wp-block-file a,
+.wp-block-button__link {
   color: $white;
   font-size: 1.2rem;
   font-family: $font-main;
@@ -6,6 +8,7 @@
   display: inline-block;
   background-color: $primary;
   text-transform: uppercase;
+  border-radius: 0;
   cursor: pointer;
 
   &:hover {

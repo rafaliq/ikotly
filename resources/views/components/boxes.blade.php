@@ -7,7 +7,7 @@
     <div class="text boxes__text">
       {!! $item['desc'] !!}
     </div>
-    <a href="#" class="button">
+    <a href="{{ $item['link']['url'] }}" class="button">
       Więcej
     </a>
   </div>
