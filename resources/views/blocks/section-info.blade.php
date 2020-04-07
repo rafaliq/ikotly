@@ -1,5 +1,5 @@
 @if($type == 'column')
-  <div class="section-info">
+  <div class="section-info pr-5">
     <h3 class="title title--small">
       {{ $title }}
     </h3>
