@@ -9,10 +9,14 @@
   transition: $transition;
   position: fixed;
   top: 0;
-  padding: gutter(1.5);
-  background: linear-gradient($white), linear-gradient($primary);
-  background-size: 35.7% 100%, 133.33333% 100%;
-  background-repeat: no-repeat;
+  padding: gutter(1.8) 0;
+  background-color: $white;
+
+  @include media(">=lg") {
+    background: linear-gradient($white), linear-gradient($primary);
+    background-size: 35.7% 100%, 133.33333% 100%;
+    background-repeat: no-repeat;
+  }
 
   &--hide {
     padding: gutter(0.5);
@@ -26,9 +30,9 @@
 
   &__brand {
     img {
-      height: gutter(5);
+      height: gutter(4.5);
       width: auto;
-      margin: $gutter;
+      margin: gutter(1) 0;
     }
   }
 
@@ -68,7 +72,7 @@
       border: 0;
       max-width: 100%;
       flex-direction: row;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
       background-color: transparent;
       padding: 0 15px;
@@ -123,7 +127,8 @@
       &.current-menu-item,
       &.current-menu-ancestor {
         position: relative;
-        color: $primary;
+        color: lighten($primary-light, 10);
+        font-weight: $bold;
 
         @include media(">=lg") {
           color: inherit;
@@ -140,6 +145,8 @@
       right: 0;
       padding: 0 15px;
       z-index: 30;
+      width: 100%;
+      background-color: darken($primary, 5);
 
       &::before {
         opacity: 0.8;

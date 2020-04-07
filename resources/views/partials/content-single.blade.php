@@ -22,7 +22,7 @@
             </div>
           </div>
           <div class="entry-content">
-            <div class="pl-5">
+            <div class="pl-lg-5">
               <h3 class="title title--small content-single__title">
                 {{ get_the_title()}}
               </h3>

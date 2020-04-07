@@ -9,6 +9,10 @@
   &__columns {
     display: grid;
     grid-template-columns: 1fr 1.99fr;
+
+    @include media("<lg") {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__title {
@@ -30,9 +34,13 @@
   }
 
   &--gradient {
-    background: linear-gradient($bg), linear-gradient($bg-dark);
-    background-size: 35.7% 100%, 133.33333% 100%;
-    background-repeat: no-repeat;
+    background-color: $gray-light;
+
+    @include media(">=lg") {
+      background: linear-gradient($bg), linear-gradient($bg-dark);
+      background-size: 35.7% 100%, 133.33333% 100%;
+      background-repeat: no-repeat;
+    }
   }
 
   &--map {

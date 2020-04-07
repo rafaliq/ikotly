@@ -1,12 +1,23 @@
 .content-single {
   &__content {
     padding-left: gutter(5);
+
+    @include media("<=lg") {
+      padding-left: 0;
+    }
   }
 
   &__cover {
     width: 80%;
     position: sticky;
     top: gutter(14);
+
+    @include media("<=lg") {
+      max-width: 500px;
+      position: relative;
+      top: 0;
+      margin-bottom: gutter(4);
+    }
   }
 
   &__img {

@@ -13,6 +13,10 @@
     grid-template-columns: repeat(4, 1fr);
     margin: 0 auto gutter(8);
     padding-left: gutter(4);
+
+    @include media("<=lg") {
+      padding-left: 0;
+    }
   }
 
   &__image {
