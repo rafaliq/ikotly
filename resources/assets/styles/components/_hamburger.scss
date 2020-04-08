@@ -3,7 +3,7 @@
   border: 0;
   background: transparent;
   width: gutter(4);
-  height: gutter(3);
+  height: gutter(2.5);
   cursor: pointer;
   $root: &;
 
@@ -53,13 +53,13 @@
 
       &:nth-child(1) {
         width: 50%;
-        top: 14px;
+        top: 12px;
         transform: rotate(45deg);
       }
 
       &:nth-child(3) {
         width: 50%;
-        bottom: 14px;
+        bottom: 12px;
         transform: rotate(-45deg);
       }
     }

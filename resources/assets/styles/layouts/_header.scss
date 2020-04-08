@@ -9,8 +9,11 @@
   transition: $transition;
   position: fixed;
   top: 0;
-  padding: gutter(1.8) 0;
   background-color: $white;
+  height: gutter(8.5);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 
   @include media(">=lg") {
     background: linear-gradient($white), linear-gradient($primary);
@@ -30,7 +33,9 @@
 
   &__brand {
     img {
-      height: gutter(4.5);
+      @include cssLock("height", 360, $container, (32, 45));
+
+      //height: gutter(4.5);
       width: auto;
       margin: gutter(1) 0;
     }

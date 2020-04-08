@@ -1,5 +1,6 @@
 .store {
   background-color: $bg;
+  overflow: hidden;
 
   @include media(">=lg") {
     background: linear-gradient($bg), linear-gradient($gray);
@@ -23,7 +24,32 @@
 
     @include media("<=lg") {
       margin: auto;
+      padding: gutter(6) 0;
       text-align: center;
+      background-color: $gray;
+      position: relative;
+
+      &::after {
+        content: "";
+        background: $gray;
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: -100%;
+      }
+
+      &::before {
+        content: "";
+        background: $gray;
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        right: -100%;
+      }
     }
   }
 

@@ -11,7 +11,7 @@
   }
 
   &__item {
-    padding: gutter(8) gutter(3);
+    padding: gutter(6) gutter(3);
 
     @include media(">=lg") {
       padding: gutter(12) gutter(5.5);
