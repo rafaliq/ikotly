@@ -37,7 +37,7 @@
     text-overflow: ellipsis;
 
     @include media(">=lg") {
-      min-height: gutter(16);
+      min-height: gutter(20);
       margin: gutter(4) 0;
     }
   }

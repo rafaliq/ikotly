@@ -1,5 +1,5 @@
 .contact {
-  @include cssLock("height", 360, $container, (300, 600));
+  @include cssLock("height", 360, $container, (350, 600));
 
   position: relative;
   width: 100%;
