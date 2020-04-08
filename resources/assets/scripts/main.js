@@ -18,6 +18,7 @@ import menu from './components/menu';
 import slider from './components/slider';
 import products from './components/products';
 import preloader from './components/preloader';
+import wp_block_gallery from './components/wp-block-gallery';
 
 
 /** Populate Router instance with DOM routes */
@@ -38,6 +39,7 @@ jQuery(document).ready(() => {
   menu.init();
   preloader.init();
   hamburger.init();
+  wp_block_gallery.init();
   //new WOW.WOW.init();
   if($('.main-carousel').length) {
     slider.init();
@@ -47,6 +49,6 @@ jQuery(document).ready(() => {
   }
 });
 
-setTimeout(()=>{
-  window.dispatchEvent(new Event('resize'));
-  }, 1000)
+// setTimeout(()=>{
+//   window.dispatchEvent(new Event('resize'));
+//   }, 1000)
