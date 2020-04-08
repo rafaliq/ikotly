@@ -16,6 +16,7 @@ import header from './components/header';
 import submenu from './components/submenu';
 import menu from './components/menu';
 import slider from './components/slider';
+import banner from './components/banner';
 import products from './components/products';
 import preloader from './components/preloader';
 import wp_block_gallery from './components/wp-block-gallery';
@@ -44,11 +45,14 @@ jQuery(document).ready(() => {
   if($('.main-carousel').length) {
     slider.init();
   }
+  if($('.banner-carousel').length) {
+    banner.init();
+  }
   if($('.products-carousel').length) {
     products.init();
   }
 });
 
-// setTimeout(()=>{
-//   window.dispatchEvent(new Event('resize'));
-//   }, 1000)
+setTimeout(()=>{
+  window.dispatchEvent(new Event('resize'));
+  }, 1000)
