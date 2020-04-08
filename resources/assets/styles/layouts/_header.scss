@@ -135,7 +135,7 @@
         font-weight: $bold;
 
         @include media(">=lg") {
-          color: inherit;
+          color: lighten($primary-light, 15);
         }
 
         .current_page_item {
