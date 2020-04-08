@@ -8,19 +8,30 @@
 
   @include media("<=lg") {
     grid-template-columns: 1fr 1fr;
-    margin: 0 auto -100px;
+    gap: gutter(1);
+    margin: 0 auto;
+  }
+
+  @include media("<500px") {
+    grid-template-columns: 1fr;
+    gap: 0;
   }
 
   &__column {
-    padding-top: gutter(15);
+    @include cssLock("padding-top", 360, $container, (20, 150));
+    //padding-top: gutter(15);
 
     @include media("<=lg") {
-      padding-top: gutter(5);
+      //padding-top: gutter(5);
+    }
+
+    @include media("<500px") {
+      padding: 0;
     }
   }
 
   &__image {
-    @include cssLock("max-width", 360, $container, (300, 560));
+    @include cssLock("max-width", 360, $container, (350, 560));
 
     margin: auto;
 
@@ -38,8 +49,12 @@
   &__box {
     max-width: gutter(40);
     margin: auto;
-    padding: gutter(1);
-    height: gutter(28);
+    height: gutter(25);
+
+    @include media("<500px") {
+      height: auto;
+      padding: gutter(2.5) 0;
+    }
 
     @include media(">=lg") {
       padding: gutter(2);
