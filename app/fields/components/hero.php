@@ -12,8 +12,10 @@ $config = (object) [
 $hero = new FieldsBuilder('hero', ['label' => 'hero']);
 
 $hero
-    ->addImage('image', ['label' => 'Tło'])
+    ->addFile('bg', ['label' => 'Filmik w tle'])
     ->addText('header', ['label' => 'tytuł'])
-    ->addText('subheader', ['label' => 'podtytuł']);
+    ->addText('subheader', ['label' => 'podtytuł'])
+    ->addTextarea('desc', ['rows' => 4, 'new_lines' => 'br', 'label' => 'Opis'])
+    ->addLink('link', ['label' => 'Link']);
 
 return $hero;
