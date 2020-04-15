@@ -47,9 +47,23 @@
   }
 
   &__box {
+    display: block;
     max-width: gutter(40);
     margin: auto;
     height: gutter(25);
+    transition: $transition;
+    color: $secondary;
+
+    &:hover {
+      transform: translateX(10px);
+      text-decoration: none;
+      color: $secondary;
+
+      .title {
+        color: $primary;
+        text-decoration: none;
+      }
+    }
 
     @include media("<500px") {
       height: auto;
@@ -76,6 +90,7 @@
   &__title {
     margin-bottom: gutter(5);
     position: relative;
+    transition: $transition;
   }
 
   &__link {

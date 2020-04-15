@@ -1,5 +1,5 @@
 // import external dependencies
-import 'jquery';
+//import 'jquery';
 
 // Import everything from autoload
 import './autoload/**/*';
@@ -13,7 +13,7 @@ import aboutUs from './routes/about';
 //import header from './components/header';
 import hamburger from './components/hamburger';
 import header from './components/header';
-import submenu from './components/submenu';
+//import submenu from './components/submenu';
 import menu from './components/menu';
 import slider from './components/slider';
 import banner from './components/banner';
@@ -36,7 +36,7 @@ const routes = new Router({
 jQuery(document).ready(() => {
   routes.loadEvents();
   header.init();
-  submenu.init();
+  //submenu.init();
   menu.init();
   preloader.init();
   hamburger.init();
@@ -53,6 +53,6 @@ jQuery(document).ready(() => {
   }
 });
 
-setTimeout(()=>{
-  window.dispatchEvent(new Event('resize'));
-  }, 1000)
+// setTimeout(()=>{
+//   window.dispatchEvent(new Event('resize'));
+//   }, 1000)

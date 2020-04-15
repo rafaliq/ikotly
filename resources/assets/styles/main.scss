@@ -5,7 +5,7 @@
 // @import library;
 @import "node_modules/include-media/dist/include-media.scss";
 @import "~flickity/css/flickity.css";
-@import "~animate.css";
+//@import "~animate.css";
 @import "vendors/scss-lock/css-lock";
 
 //common
@@ -27,7 +27,7 @@
 @import "components/link";
 @import "components/wp-classes";
 @import "components/hr";
-@import "components/submenu.scss";
+//@import "components/submenu.scss";
 @import "components/section-info.scss";
 @import "components/flickity.scss";
 
@@ -39,8 +39,8 @@
 @import "layouts/banner";
 @import "layouts/hero";
 @import "layouts/small-hero";
-@import "layouts/text-img";
-@import "layouts/icons";
+//@import "layouts/text-img";
+//@import "layouts/icons";
 @import "layouts/section";
 @import "layouts/content-page";
 @import "layouts/content-single";
@@ -48,7 +48,7 @@
 @import "layouts/gallery";
 @import "layouts/products";
 @import "layouts/contact";
-@import "layouts/infobar";
+//@import "layouts/infobar";
 @import "layouts/menu";
 @import "layouts/offer";
 @import "layouts/boxes";

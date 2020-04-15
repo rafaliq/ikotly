@@ -5,17 +5,17 @@
       <div class="offer__column">
         @foreach($data['boxes'] as $item)
           @if($loop->iteration == '1' || $loop->iteration == '2')
-            <div class="offer__box @if($loop->iteration == '2') offer__box--left @endif">
+            <a href="{{ $data['link']['url'] }}" class="offer__box @if($loop->iteration == '2') offer__box--left @endif">
               <h3 class="title title--small offer__title">
                 {{ $item['title'] }}
               </h3>
               <p class="text">
                 {{ $item['desc'] }}
               </p>
-              <a href="{{ $data['link']['url'] }}" class="link offer__link">
+              {{-- <a href="{{ $data['link']['url'] }}" class="link offer__link">
                 {{ $data['link']['title'] }}
-              </a>
-            </div>
+              </a> --}}
+            </a>
           @endif
         @endforeach
       </div>
@@ -25,17 +25,17 @@
       <div class="offer__column">
         @foreach($data['boxes'] as $item)
           @if($loop->iteration == '3' || $loop->iteration == '4')
-            <div class="offer__box @if($loop->iteration == '4') offer__box--right @endif">
+            <a href="{{ $data['link']['url'] }}" class="offer__box @if($loop->iteration == '4') offer__box--right @endif">
               <h3 class="title title--small offer__title">
                 {{ $item['title'] }}
               </h3>
               <p class="text">
                 {{ $item['desc'] }}
               </p>
-              <a href="{{ $data['link']['url'] }}" class="link offer__link">
+              {{-- <a href="{{ $data['link']['url'] }}" class="link offer__link">
                 {{ $data['link']['title'] }}
-              </a>
-            </div>
+              </a> --}}
+            </a>
           @endif
         @endforeach
       </div>
