@@ -53,6 +53,6 @@ jQuery(document).ready(() => {
   }
 });
 
-// setTimeout(()=>{
-//   window.dispatchEvent(new Event('resize'));
-//   }, 1000)
+setTimeout(()=>{
+  window.dispatchEvent(new Event('resize'));
+  }, 1000)
