@@ -14,7 +14,7 @@ $hero = new FieldsBuilder('hero', ['label' => 'hero']);
 $hero
     ->addFile('bg', ['label' => 'Filmik w tle'])
     ->addText('header', ['label' => 'tytuł'])
-    ->addText('subheader', ['label' => 'podtytuł'])
+    ->addTextarea('subheader', ['rows' => 4, 'new_lines' => 'br', 'label' => 'podtytuł'])
     ->addTextarea('desc', ['rows' => 4, 'new_lines' => 'br', 'label' => 'Opis'])
     ->addLink('link', ['label' => 'Link']);
 

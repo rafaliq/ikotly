@@ -5,11 +5,11 @@
         {{ $data['header'] }}
       </span>
       <span class="text text--3 hero__subheader">
-        {{ $data['subheader'] }}
+        {!! $data['subheader'] !!}
       </span>
     </h1>
     <p class="text text--2 hero__text">
-      {{ $data['desc'] }}
+      {!! $data['desc'] !!}
     </p>
     <a href="{{ $data['link']['url'] }}" class="button">
       więcej
