@@ -20,15 +20,6 @@
     @php do_action('get_footer') @endphp
     @include('partials.footer')
     @php wp_footer() @endphp
-    <style type="text/css">
-      #caRatySideup {
-          display: none;
-          position: fixed;
-          top: 30%;
-          right: 0px;
-          z-index: 1005;
-      }
-    </style>
     <script type="text/javascript">
         function showProcedure() {
             var iWidth = 820;
