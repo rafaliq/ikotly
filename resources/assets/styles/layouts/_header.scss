@@ -11,11 +11,12 @@
   position: fixed;
   top: 0;
   background-color: $white;
-  height: gutter(8.5);
+  //height: gutter(8.5);
   display: flex;
   align-items: center;
-  padding: gutter(5.5) 0;
-  transition: 0.4s;
+  //padding: gutter(5.5) 0;
+  height: gutter(9);
+  transition: height 0.4s;
 
   @include media(">=lg") {
     @include cssLock("font-size", 1000, $container, (13.5, 16));
@@ -23,6 +24,7 @@
     background: linear-gradient($white), linear-gradient($primary);
     background-size: 35.7% 100%, 133.33333% 100%;
     background-repeat: no-repeat;
+    height: gutter(12);
   }
 
   @include media(">=1300px") {
@@ -45,7 +47,7 @@
   }
 
   &--hide {
-    padding: gutter(0.5);
+    height: gutter(8);
 
     img {
       @include cssLock("height", 360, $container, (30, 45));
